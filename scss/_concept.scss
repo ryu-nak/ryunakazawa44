@@ -1,0 +1,66 @@
+.concept {
+    height: 967px;
+    background: linear-gradient(to bottom, $cream 0%,$cream 42%, #A1938689 42%, #A1938689 100%);
+    @include sp {
+        height: 711px;
+        background: linear-gradient(to bottom, $cream 0%,$cream 25%, #A1938689 25%, #A1938689 100%);
+    }
+    &-img {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        &:last-child {
+            margin-left: 10px;
+        }
+        @include sp {
+            margin-top: 50px;
+            width: 100%;
+            img {
+                width: 49%;
+                height: 30vh;
+                &:last-child {
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}
+
+.concept-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 70px auto;
+    @include sp {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .concept-catch {
+        letter-spacing: 16px;
+        font-family: "Hiragino Mincho Pro";
+        font-size: 40px;
+        width: 445px;
+        @include sp {
+            font-size: 18px;
+            width: 100%;
+            letter-spacing: 7.2px;
+            height: 29px;
+            text-align: center;
+        }
+    }
+    .concept-desc {
+        width: 422px;
+        height: 130px;
+        margin-left: 57px;
+        letter-spacing: 1.6px;
+        line-height: 27px;
+        @include sp {
+            width: 100%;
+            height: 211px;
+            font-size: 16px;
+            margin-top: 18px;
+            margin-left: 0;
+        }
+    }
+}
